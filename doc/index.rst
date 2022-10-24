@@ -67,7 +67,9 @@ Getting started is easy:
 
     Instructions for specific test runners:
 
-    - **pytest**
+    .. tabs::
+
+        .. tab:: pytest
 
             If you usually use::
 
@@ -80,7 +82,7 @@ Getting started is easy:
             Many people choose to use the `pytest-cov`_ plugin, but for most
             purposes, it is unnecessary.
 
-    - **unittest**
+        .. tab:: unittest
 
             Change "python" to "coverage run", so this::
 
@@ -90,18 +92,18 @@ Getting started is easy:
 
                 $ coverage run -m unittest discover
 
-    .. - **nosetest**
-    ..
-    ..        *Nose has been unmaintained for a long time. You should seriously
-    ..        consider adopting a different test runner.*
-    ..
-    ..        Change this::
-    ..
-    ..            $ nosetests arg1 arg2
-    ..
-    ..        to this::
-    ..
-    ..            $ coverage run -m nose arg1 arg2
+        .. tab:: nosetest
+
+            *Nose has been unmaintained for a long time. You should seriously
+            consider adopting a different test runner.*
+
+            Change this::
+
+                $ nosetests arg1 arg2
+
+            to::
+
+                $ coverage run -m nose arg1 arg2
 
     To limit coverage measurement to code in the current directory, and also
     find files that weren't executed at all, add the ``--source=.`` argument to
