@@ -77,6 +77,10 @@ jobs:
           # For extreme debugging:
           # python -c "import urllib.request as r; exec(r.urlopen('https://bit.ly/pydoctor').read())"
 
+      - name: "Pip freeze"
+        run: |
+          python -m pip freeze --all
+
       - name: "Run tox for ${{ matrix.python-version }}"
         run: |
           python -m tox -rvv -- -rfsEX
