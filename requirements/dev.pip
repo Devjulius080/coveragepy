@@ -415,12 +415,6 @@ tomlkit==0.11.6 \
 tox==4.0.16 \
     --hash=sha256:1ba98d4a67b815403e616cf6ded707aeb0fadff10702928f9b990274c9703e9f \
     --hash=sha256:968fc4e27110defdf15972893cb15fe1669f338c8408d8835077462fb07e07fe
-    # via
-    #   -r requirements/tox.pip
-    #   tox-gh-actions
-tox-gh-actions==3.0.0 \
-    --hash=sha256:059ebfdba76864819f3a4629c3404be094dae9dc8e7922c7c7a9999b9551f82a \
-    --hash=sha256:1a20286a1102c720a5979f56a060f6d618306dbb660a6724a31d89f397421e5c
     # via -r requirements/tox.pip
 twine==4.0.2 \
     --hash=sha256:929bc3c280033347a00f847236564d1c52a3e61b1ac2516c97c48f3ceab756d8 \
