@@ -4,10 +4,20 @@
 #
 #    make upgrade
 #
+cachetools==5.2.0 \
+    --hash=sha256:6a94c6402995a99c3970cc7e4884bb60b4a8639938157eeed436098bf9831757 \
+    --hash=sha256:f9f17d2aec496a9aa6b76f53e3b614c965223c061982d434d160f930c698a9db
+    # via tox
+chardet==5.1.0 \
+    --hash=sha256:0d62712b956bc154f85fb0a266e2a3c5913c2967e00348701b32411d6def31e5 \
+    --hash=sha256:362777fb014af596ad31334fde1e8c327dfdb076e1960d1694662d46a6917ab9
+    # via tox
 colorama==0.4.6 \
     --hash=sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44 \
     --hash=sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6
-    # via -r requirements/tox.in
+    # via
+    #   -r requirements/tox.in
+    #   tox
 distlib==0.3.6 \
     --hash=sha256:14bad2d9b04d3a36127ac97f30b12a19268f211063d8f8ee4f47108896e11b46 \
     --hash=sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e
@@ -25,10 +35,6 @@ importlib-metadata==5.2.0 \
     #   pluggy
     #   tox
     #   virtualenv
-importlib-resources==5.10.1 \
-    --hash=sha256:32bb095bda29741f6ef0e5278c42df98d135391bee5f932841efc0041f748dc3 \
-    --hash=sha256:c09b067d82e72c66f4f8eb12332f5efbebc9b007c0b6c40818108c9870adc363
-    # via tox-gh-actions
 packaging==22.0 \
     --hash=sha256:2198ec20bd4c017b8f9717e00f0c8714076fc2fd93816750ab48e2c41de2cfd3 \
     --hash=sha256:957e2148ba0e1a3b282772e791ef1d8083648bc131c8ab0c1feba110ce1146c3
@@ -45,13 +51,9 @@ pluggy==1.0.0 \
     --hash=sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159 \
     --hash=sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3
     # via tox
-py==1.11.0 \
-    --hash=sha256:51c75c4126074b472f746a24399ad32f6053d1b34b68d2fa41e558e6f4a98719 \
-    --hash=sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378
-    # via tox
-six==1.16.0 \
-    --hash=sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926 \
-    --hash=sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
+pyproject-api==1.2.1 \
+    --hash=sha256:093c047d192ceadcab7afd6b501276bf2ce44adf41cb9c313234518cddd20818 \
+    --hash=sha256:155d5623453173b7b4e9379a3146ccef2d52335234eb2d03d6ba730e7dad179c
     # via tox
 tomli==2.0.1 \
     --hash=sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc \
@@ -59,15 +61,15 @@ tomli==2.0.1 \
     # via
     #   pyproject-api
     #   tox
-tox==3.28.0 \
-    --hash=sha256:57b5ab7e8bb3074edc3c0c0b4b192a4f3799d3723b2c5b76f1fa9f2d40316eea \
-    --hash=sha256:d0d28f3fe6d6d7195c27f8b054c3e99d5451952b54abdae673b71609a581f640
+tox==4.0.16 \
+    --hash=sha256:1ba98d4a67b815403e616cf6ded707aeb0fadff10702928f9b990274c9703e9f \
+    --hash=sha256:968fc4e27110defdf15972893cb15fe1669f338c8408d8835077462fb07e07fe
     # via
     #   -r requirements/tox.in
     #   tox-gh-actions
-tox-gh-actions==2.12.0 \
-    --hash=sha256:5214db422a3297854db14fe814d59bd95674b7c577793bf406e7832dabeca03d \
-    --hash=sha256:7a8aa62cd616b0e74c7db204bc44bbd603574f468f00c4ba3a2a3c87de8cf514
+tox-gh-actions==3.0.0 \
+    --hash=sha256:059ebfdba76864819f3a4629c3404be094dae9dc8e7922c7c7a9999b9551f82a \
+    --hash=sha256:1a20286a1102c720a5979f56a060f6d618306dbb660a6724a31d89f397421e5c
     # via -r requirements/tox.in
 typing-extensions==4.4.0 \
     --hash=sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa \
@@ -82,6 +84,4 @@ virtualenv==20.17.1 \
 zipp==3.11.0 \
     --hash=sha256:83a28fcb75844b5c0cdaf5aa4003c2d728c77e05f5aeabe8e95e56727005fbaa \
     --hash=sha256:a7a22e05929290a67401440b39690ae6563279bced5f314609d9d03798f56766
-    # via
-    #   importlib-metadata
-    #   importlib-resources
+    # via importlib-metadata
